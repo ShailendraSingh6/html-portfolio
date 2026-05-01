@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shailendra Singh - Performance Engineer Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 60px 0;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #667eea;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: #764ba2;
+        font-weight: 400;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+
+      .divider {
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        margin: 20px auto;
+        border-radius: 2px;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .project-info {
+        padding: 25px;
+      }
+
+      .project-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      .project-card a {
+        color: white;
+        text-decoration: none;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        padding: 12px 25px;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease;
+        font-weight: 600;
+      }
+
+      .project-card a:hover {
+        background: linear-gradient(135deg, #764ba2, #667eea);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      footer {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        text-align: center;
+        margin-top: 60px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer-nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .footer-nav a {
+        color: #667eea;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        padding: 10px 20px;
+        border-radius: 6px;
+        border: 2px solid transparent;
+      }
+
+      .footer-nav a:hover {
+        color: #764ba2;
+        border-bottom: 3px solid #764ba2;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        main {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        header {
+          padding: 40px 0;
+        }
+
+        .footer-nav {
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>Shailendra Singh</h1>
+        <h2>Performance Engineer</h2>
+        <div class="divider"></div>
+        <p style="font-size: 1rem; color: #666;">Crafting high-performance web solutions with precision and excellence</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        <div class="project-card">
+          <img
+            src="./assets/images/movie-ranking.png"
+            alt="Movie Ranking Project"
+          />
+          <div class="project-info">
+            <h3>Movie Ranking</h3>
+            <p style="margin-bottom: 20px; color: #666;">Explore and rank your favorite movies with an interactive interface.</p>
+            <a href="./public/movie-ranking.html">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/images/birthday-invite.png"
+            alt="Birthday Invite Project"
+          />
+          <div class="project-info">
+            <h3>Birthday Invite</h3>
+            <p style="margin-bottom: 20px; color: #666;">Create beautiful and personalized birthday invitations effortlessly.</p>
+            <a href="./public/birthday-invite.html">View Project</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="container">
+        <nav class="footer-nav">
+          <a href="./public/about.html">About Me</a>
+          <a href="./public/contact.html">Contact Me</a>
+        </nav>
+        <p style="margin-top: 30px; color: #999; font-size: 0.9rem;">© 2024 Shailendra Singh. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
